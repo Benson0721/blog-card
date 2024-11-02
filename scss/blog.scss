@@ -1,0 +1,117 @@
+html {
+    font-family: "Figtree", sans-serif;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: bold;
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F4D04E;
+        height: 100vh;
+        width: 100vw;
+
+        //change font-size without using media query ==> use "rem"?
+        h1 {
+            font-size: 1.7rem;
+            margin: 0%;
+
+            &:hover {
+                color: #F4D04E;
+            }
+        }
+
+        h2 {
+            font-size: 14px;
+            margin: 0%;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin: 0%;
+        }
+
+
+        figure {
+            margin: 0px;
+        }
+    }
+}
+
+.card_border {
+    border: 1px solid #111111;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px #000000;
+    width: 100%;
+    max-width: 327px;
+    max-height: 501px;
+    background-color: white;
+
+    .card_box {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .img-container {
+            border-radius: 20px;
+            overflow: hidden;
+
+            #box_img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .box_item {
+            margin-bottom: 24px;
+
+            .space {
+                margin-bottom: 12px;
+            }
+
+            .context {
+                color: #6B6B6B;
+                font-size: 1rem;
+            }
+
+            #hashTag {
+                border-radius: 4px;
+                background-color: #F4D04E;
+                width: 26%;
+            }
+
+            #hashTag h3 {
+                padding: 4px 12px;
+            }
+        }
+
+        #author {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 12px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:1440px) {
+    html {
+        font-size: 14px;
+    }
+
+    .card_border {
+        max-width: 384px;
+        max-height: 522px;
+    }
+}
